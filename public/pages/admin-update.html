@@ -1,0 +1,36 @@
+<div id="dashboard" class="dashboard">
+    <div id="painel-dashboard" class="painel-dashboard">
+        <div class="d-a-a">
+            <h4>Dashboard - Área Administrativa</h4>
+            <div onclick="signOut()" class="sign-out">
+                <p sign-out-txt>sair</p><i class="fas fa-sign-out-alt"></i>
+            </div>
+        </div>
+        <div id="spin-update" class="spin"></div>
+        <div id="data-update" class="data-update">
+            <button onclick="backUpdate()" class="btn-back"><i class="fas fa-arrow-alt-circle-left"></i></button>
+            <div id="message-success-update" class="message message-success"></div>
+            <div id="message-error-update" class="message message-error"></div>   
+
+            <form class="form-update">
+                <p class="title-update">Alterar Capa do Album</p>
+                <div id="content-preview-update" class="content-preview-update">
+                    <label for="image-preview-update">
+                        <p id="icon-update-img" class="icon-update-img"><i class="fas fa-edit"></i></p>
+                        <img id="img-update" class="img-update">
+                        <input type="file" name="image" id="image-preview-update" class="image-preview-update" hidden>
+                    </label>
+                </div>
+                <button id="save-update-img" class="btn save-update-img">Atualizar Album</button>
+                <p class="title-update">Alterar dado(s)</p>
+                <input type="hidden" name="{{id}}" value="{{id}}" id="id-album-update">
+                <input type="text" name="name" id="name-update" class="input" placeholder="Nome do Album">
+                <input type="text" name="band" id="band-update" class="input" placeholder="Banda do Album">
+                <input type="text" name="year" id="year-update" class="input" placeholder="Ano de lançamento">
+                <input type="text" name="genre" id="genre-update" class="input" placeholder="Género Musical">
+                <textarea name="tracks" id="tracks-update" class="text-area" placeholder="Faixas do Album"></textarea>
+                <button id="save-update-data" class="btn">Atualizar Dados</button>
+            </form>
+        </div>
+    </div>
+</div>

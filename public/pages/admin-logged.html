@@ -1,0 +1,28 @@
+<div id="dashboard" class="dashboard">
+    <div id="painel-dashboard" class="painel-dashboard">
+        <div class="d-a-a">
+            <h4>Dashboard - Área Administrativa</h4>
+            <div onclick="signOut()" class="sign-out">
+                <p sign-out-txt>sair</p><i class="fas fa-sign-out-alt"></i>
+            </div>
+        </div>
+        <div id="spin-load-update" class="spin"></div>
+        <div id="logged" class="content-card"></div>
+    </div>
+</div>
+<div id="data-delete-modal" class="data-delete-modal">
+    <div id="content-modal-delete" class="content-modal-delete">
+        <div id="spin-delete" class="spin"  style="display: none;"></div>
+        <div id="message-success-delete" class="message message-success"></div>
+        <div id="message-error-delete" class="message message-error"></div> 
+        <button id="btn-close-modal" class="btn btn-close-modal" onclick="closeDeleteModal()">ok</button>
+        <div id="content-modal-info" class="content-modal-info">
+            <p id="id-delete" class="id-delete"></p>
+            <p>Deseja excluir esses dados?</p>
+            <div class="options-delete">
+                <button class="btn btn-options" onclick="yesDelete()">Sim</button>
+                <button class="btn btn-options" onclick="noDelete()">Não</button>
+            </div>
+        </div>
+    </div>
+</div>

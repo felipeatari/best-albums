@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{root}}/public/assets/favicon.ico">
+    <link rel="stylesheet" href="{{root}}/public/css/reset.css">
+    <link rel="stylesheet" href="{{root}}/public/css/layout.css">
+    <link rel="stylesheet" href="{{root}}/public/css/home.css">
+    <link rel="stylesheet" href="{{root}}/public/css/save-album.css">
+    <link rel="stylesheet" href="{{root}}/public/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <title>Best Albums</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="menu-mobile">
+                <img class="logo" src="{{root}}/public/assets/logo.png" alt="logo">
+                <i id="btn-open" class="btn-open fas fa-bars"></i>
+                <ul id="items-mobile" class="items-mobile">
+                    <p id="btn-close" class="btn-close">X</p>
+                    <li><a href="{{home}}">Home</a></li>
+                    <li><a href="{{cadastrar}}">Cadastrar</a></li>
+                    <li><a id="admin" href="{{admin}}">Admin</a></li>
+                    <li><a href="{{sobre}}">Sobre</a></li>
+                </ul>
+            </nav>
+            <nav class="menu-desktop">
+                <img class="logo" src="{{root}}/public/assets/logo.png" alt="logo">
+                <ul class="items-desktop">
+                    <li><a id="home-desk" href="{{home}}">Home</a></li>
+                    <li><a id="cadastar-desk" href="{{cadastrar}}">Cadastrar</a></li>
+                    <li><a id="admin-desk" href="{{admin}}">Admin</a></li>
+                    <li><a href="{{sobre}}">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="content">
+            {{content}}
+        </section>
+        <footer id="footer">
+            <p>&copy; copyright - 2021  |  DEV FELIPE ATARI</p>
+        </footer>
+    </div>
+    <script src="{{root}}/public/javascript/responsive.js"></script>
+    <script src="{{root}}/public/javascript/search.js"></script>
+    <script src="{{root}}/public/javascript/save.js"></script>
+    <script src="{{root}}/public/javascript/admin.js"></script>
+</body>
+
+</html>

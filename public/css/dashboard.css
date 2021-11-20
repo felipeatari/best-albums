@@ -1,0 +1,213 @@
+.dashboard{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    color: rgb(80, 79, 79);
+    position: relative;
+}
+.dashboard .form-logged{
+    flex: 1;
+    width: 220px;
+    padding: 10px;
+}
+.dashboard .painel-dashboard{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.dashboard .painel-dashboard .logged{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.dashboard .painel-dashboard .d-a-a{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 8px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.dashboard .painel-dashboard .d-a-a .sign-out{
+    display: flex;
+    align-items: center;
+    color: rgb(2, 107, 245);
+}
+.dashboard .painel-dashboard .d-a-a .sign-out:hover{
+    cursor: pointer;
+    color: rgb(146, 146, 146);
+}
+.painel-dashboard .data-update{
+    display: none;
+    width: 240px;
+}
+.open-update{
+    margin-right: 10px;
+}
+.painel-dashboard .form-update .content-preview-update{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-top: 5px;
+}
+.painel-dashboard .form-update .save-update-img{
+    margin-bottom: 30px;
+}
+.painel-dashboard .form-update .content-preview-update .icon-update-img{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    color: #ecbe05;
+}
+.painel-dashboard .form-update .content-preview-update label .img-update{
+    width: 200px;
+    height: 200px;
+}
+.painel-dashboard .form-update{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.painel-dashboard .form-update textarea{
+    margin-top: 5px;
+}
+
+.title-update{
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
+.data-delete-modal{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    overflow:auto;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.data-delete-modal .content-modal-delete{
+    width: 250px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px;
+}
+.data-delete-modal .content-modal-delete .content-modal-info .options-delete{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.data-delete-modal .content-modal-delete .content-modal-info .id-delete{
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.btn-options{
+    width: 70px;
+}
+.btn-close-modal{
+    display: none;
+}
+.p{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.access{
+    padding: 10px;
+    width: 200px;
+    font-size: 11pt;
+    border: 2px solid rgb(134, 134, 134);
+    border-radius: 5px;
+    color: rgb(117, 115, 115);
+    margin-top: 20px;
+}
+.access h1{
+    font-size: 15pt;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 750px){
+    .dashboard{
+        width: 100%;
+    }
+    .dashboard .painel-dashboard .logged{
+        width: 100%;
+        flex-direction: column;
+    }
+    .dashboard .painel-dashboard .d-a-a{
+        width: 340px;
+        flex-direction: column;
+    }
+    .dashboard .painel-dashboard{
+        width: 100%;
+    }
+}
+@media (max-width: 325px){
+    .dashboard .painel-dashboard .d-a-a{
+        width: 100%;
+    }
+    .dashboard .form-logged{
+        width: 100%;
+    }
+}
+@media (max-width: 270px){
+    .p{
+        flex-direction: column;
+    }
+}
+@media (max-width: 250px){
+    .data-delete-modal .content-modal-delete{
+        width: 100%;
+    }
+}
+@media (max-width: 225px){
+    .painel-dashboard .form-update .content-preview-update{
+        width: 100%;
+    }
+    .painel-dashboard .form-update .content-preview-update label .img-update{
+        width: 100%;
+    }
+    .painel-dashboard .data-update{
+        width: 100%;
+    }
+}
+@media (max-width: 200px){
+    .title-update{
+        width: 100%;
+    }
+}
+@media (max-width: 170px){
+    .data-delete-modal .content-modal-delete .options-delete{
+        flex-direction: column;
+    }
+}

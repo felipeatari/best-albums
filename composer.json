@@ -1,0 +1,21 @@
+{
+    "name": "atari/best-albums",
+    "description": "This project aims to bring together the best albums from the main band and rock (and related genres such as heavy metal, power metal, etc....) to serve as a kind of guide.",
+    "license": "@",
+    "authors": [
+        {
+            "name": "Dev Felipe Atari",
+            "email": "mr.robot.felipe@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        },
+        "files": [
+            "config.php"
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+<div class="content-form">
+    <form id="form-on" class="form-on">
+        <h4>Envie os dados do album!</h4>
+        <input type="text" name="name" id="name" class="input" placeholder="Nome do Album">
+        <input type="text" name="band" id="band" class="input" placeholder="Banda do Album">
+        <input type="text" name="year" id="year" class="input" placeholder="Ano de lançamento">
+        <input type="text" name="genre" id="genre" class="input" placeholder="Género Musical">
+        <textarea name="tracks" id="tracks" class="text-area" placeholder="Faixas do Album"></textarea>
+        <button type="submit" id="btn-submit-one" class="btn">Enviar Dados</button>
+    </form>
+    <div id="spin-save-one" class="spin" style="display: none;"></div>
+    <form id="form-two" class="form-two">
+        <h4>Agora envie a capa do album!</h4>
+        <div id="content-preview" class="content-preview">
+            <p id="add" class="add fa fa-cloud-upload-alt"></p>
+            <img id="preview" class="preview">
+            <input type="file" name="image" id="image" class="image" hidden>
+        </div>
+        <button type="submit" id="btn-submit-two" class="btn">Enviar Imagem</button>
+    </form>
+    <div id="spin-save-two" class="spin" style="display: none;"></div>
+    <div id="confirm" class="confirm">
+        <p id="message-success" class="message message-success"></p>
+        <p id="message-error" class="message message-error"></p>
+        <div id="content-confirm" class="content-confirm">
+            <h4>Click em confirmar para salvar!</h4>
+            <button type="submit" id="btn-confirm" class="btn" value="confirm">Confirmar</button>
+        </div>
+        <div id="content-ok">
+            <button type="submit" onclick="confirmOk()" class="btn" value="confirm">Ok</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,191 @@
+.content-card{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+.content-card .card{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 350px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0.5px 1px 3px rgb(39, 39, 39, 0.5);
+    border-radius: 3px;
+}
+.content-card .card .img-card{
+    width: 100px;
+    height: 100px;
+}
+.content-card .card .img-card img{
+    width: 100px;
+    height: 100px;
+}
+.content-card .card .info-card{
+    width: 330px;
+    padding: 10px;
+}
+.content-card .card .info-card h3{
+    font-size: 10pt;
+}
+.content-card .card .info-card p{
+    font-size: 9pt;
+    color: rgb(70, 70, 70);
+}
+.content-card .card .p-open-album{
+    margin-top: 15px;
+}
+.content-card .card .open-album{
+    text-decoration: none;
+    color: rgb(2, 67, 207);
+    cursor: pointer;
+}
+.content-card .card .open-album:hover{
+    text-decoration: underline;
+}
+
+.content-open-album{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 240px;
+}
+.content-open-album .content-album{
+    display: none;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    width: 200px;
+}
+.content-open-album .content-album .img-album{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content-open-album .content-album .items-album{
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.content-open-album .content-album .items-album .p-home{
+    font-size: 10pt;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #ccc;
+    padding: 1px;
+}
+.content-open-album .content-album .title-tracks{
+    margin-top: 10px;
+    font-size: 10pt;
+}
+.content-open-album .content-album .tracks{
+    outline: none;
+}
+
+.search{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 2px;
+    background-color: rgb(54, 53, 53);
+    margin-bottom: 20px;
+}
+.search-album{
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+}
+.btn-search{
+    padding: 2px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 3px;
+    color: #F8B50A;
+}
+
+.content-card .no-success{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn-back-search{
+    display: none;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    color: #f7c606;
+    font-size: 18pt;
+    background-color: rgb(34, 32, 32);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+}
+
+@media (max-width: 750px){
+    .menu-desktop{
+        display: none;
+    }
+    .content-card{
+        width: 100%;
+    }
+    .content-card .card{
+        margin: 0 0 15px 0;
+    }
+    .content-open-album .content-album{
+        width: 100%;
+    }
+}
+@media (max-width: 350px){
+    .search{
+        width: 100%;
+    }
+    .content-card {
+        width: 100%;
+    }
+    .content-card .card{
+        width: 100%;
+        flex-direction: column;
+    }
+    .content-card .card .info-card{
+        width: 100%;
+        text-align: center;
+    }
+    .content-album{
+        width: 100%;
+    }
+    .content-album .back{
+        align-self: center;
+    }
+    .content-album .img-album{
+        width: 100%;
+    }
+    .content-album .items-album{
+        width: 100%;
+    }
+    .content-album .tracks{
+        width: 100%;
+    }
+}    
+@media (max-width: 250px){
+    .content-open-album{
+        width: 100%;
+    }
+    .content-open-album .content-album .img-album{
+        width: 100%;
+    }
+    .content-open-album .content-album .items-album{
+        width: 100%;
+    }
+}

@@ -1,0 +1,84 @@
+.content-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 380px;
+    padding: 10px;
+    color: rgb(80, 79, 79);
+}
+.form-on{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+}
+.form-on textarea{
+    margin-top: 5px;
+}
+.form-two{
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    display: none;
+}
+.form-two .content-preview{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px dashed #ffcf0f;
+    color: #ffcf10;
+}
+.form-two .content-preview .preview{
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover;
+    display: none;
+}
+.form-two .content-preview .add{
+    font-size: 50pt;
+}
+.confirm{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+}
+.confirm .content-confirm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+@media (max-width: 325px){
+    .content-form{
+        width: 100%;
+        padding: 0;
+    }
+    .form-on{
+        width: 100%;
+    }
+    .form-two{
+        width: 100%;
+    }
+    .confirm{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+    }
+}
